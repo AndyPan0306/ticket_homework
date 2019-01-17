@@ -2,9 +2,15 @@ package com.train;
 
 
 import com.train.controller.Controller;
+import com.train.exception.InputDataException;
 
 public class Tester {
     public static void main(String[] args) {
-        new Controller().printQuestion();
+        try {
+            new Controller().printQuestion();
+        }catch (Exception e){
+            new InputDataException(e.getMessage()).printStackTrace();
+        }
+
     }
 }

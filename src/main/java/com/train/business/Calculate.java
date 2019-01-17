@@ -4,7 +4,7 @@ public class Calculate {
 
     private double ticket;
 
-    public int ticketCaculate(int sum, int num) {
+    public int ticketCalculate(int sum, int num) {
 
         int onceTicket = 1000 * (sum - num);
 

@@ -4,6 +4,7 @@ import com.train.business.Calculate;
 import com.train.model.Ticket;
 
 import javax.swing.*;
+import java.awt.*;
 import java.util.Scanner;
 
 public class Controller {
@@ -16,14 +17,14 @@ public class Controller {
     private int ticketCalculate;
 
 
-    private void question() {
+    private void question() throws HeadlessException,NumberFormatException {
         String placeName = JOptionPane.showInputDialog("Which side do you want to go from?");
         sum = JOptionPane.showInputDialog("Please enter number of ticket ");
         num = JOptionPane.showInputDialog("How many round-trip ticket?");
 
         ticket = new Ticket(placeName, Integer.parseInt(sum));
         calculate = new Calculate();
-        ticketCalculate = calculate.ticketCaculate(ticket.getNum(), Integer.parseInt(num));
+        ticketCalculate = calculate.ticketCalculate(ticket.getNum(), Integer.parseInt(num));
     }
 
     public void printQuestion() {
