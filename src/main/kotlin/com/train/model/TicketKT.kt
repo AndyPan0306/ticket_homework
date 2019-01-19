@@ -1,6 +1,3 @@
 package com.train.model
 
-class TicketKT {
-
-
-}
+class TicketKT(var station: String?, var number: Int?)

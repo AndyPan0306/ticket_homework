@@ -5,13 +5,11 @@ import com.train.model.Ticket;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.Scanner;
 
 public class Controller {
 
     private Ticket ticket;
     private Calculate calculate;
-    private Scanner sc;
     private String num;
     private String sum;
     private int ticketCalculate;
